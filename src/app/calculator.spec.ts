@@ -10,12 +10,20 @@ describe('Test for calculator', () => {
         expect(rta).toEqual(9)
     });
     
-    it('#multiplay should return some',() => {
+    it('#divide should return some',() => {
         //Arrange
         const calculator = new Calculator();
         //Act
         //Assert
         expect(calculator.divide(6,2)).toEqual(3)
+    });
+    
+    it('#divide for zero',() => {
+        //Arrange
+        const calculator = new Calculator();
+        //Act
+        //Assert
+        expect(calculator.divide(6,0)).toBeNull()
     });
 
     it('test marchers', () => {
