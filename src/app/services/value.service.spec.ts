@@ -1,5 +1,6 @@
 // import { TestBed } from '@angular/core/testing';
 
+import { TestBed } from '@angular/core/testing';
 import { ValueService } from './value.service';
 
 describe('ValueService', () => {
@@ -7,7 +8,12 @@ describe('ValueService', () => {
 
   //Ejecutara cada sentencia de codigo por cada prueba
   beforeEach(() =>{
-    service = new ValueService();
+    //1. service = new ValueService();
+    //2.
+    TestBed.configureTestingModule({
+      providers: [ ValueService ]
+    })
+    service = TestBed.inject(ValueService); //injeccion de dependencias por singleton
   });
 
   it('Shoul be create', ()=>{

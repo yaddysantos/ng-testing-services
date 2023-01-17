@@ -8,7 +8,7 @@ export class MasterService {
 
   constructor(private valueService: ValueService) { }
 
-  getVaLue(){
+  getVaLueM(){
     //master service depende de valueservice
     return this.valueService.getValue();
   }
