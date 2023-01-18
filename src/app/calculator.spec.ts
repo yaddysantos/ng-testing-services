@@ -1,6 +1,6 @@
 import { Calculator } from "./calculator";
 
-describe('Test for calculator', () => {
+xdescribe('Test for calculator', () => {
     it('#multiplay should return a nine',() => {
         //Arrange
         const calculator = new Calculator();

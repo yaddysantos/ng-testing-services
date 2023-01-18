@@ -10,6 +10,6 @@ export class MasterService {
 
   getVaLueM(){
     //master service depende de valueservice
-    return this.valueService.getValue();
+    return this.valueService.getValueV();
   }
 }

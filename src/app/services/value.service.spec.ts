@@ -23,15 +23,15 @@ describe('ValueService', () => {
   //encerrar cada prueba en su propio metodo
   describe('Test for getValue', () => {
      it('Should return "My value"', () =>{
-      expect(service.getValue()).toBe('My value');
+      expect(service.getValueV()).toBe('My value');
      })
   })
   
   describe('Test for setValue', () => {
      it('Should change the value', () =>{
-      expect(service.getValue()).toBe('My value');
+      expect(service.getValueV()).toBe('My value');
       service.setValue('change');
-      expect(service.getValue()).toBe('change');
+      expect(service.getValueV()).toBe('change');
      })
   })
   

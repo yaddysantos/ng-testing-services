@@ -10,7 +10,7 @@ export class ValueService {
 
   constructor() { }
 
-  getValue(){
+  getValueV(){
     return this.value;
   }
 
